@@ -534,6 +534,7 @@ h3 {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
+  cursor: pointer;
 }
 .button-icon {
   fill: #ffffff;
@@ -640,6 +641,7 @@ h3 {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
+  height: 581px;
   padding: 40px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -675,7 +677,7 @@ h3 {
 .form-label {
   display: block;
   font-size: 12px;
-  line-height: 1.5;
+  line-height: 1.167;
   letter-spacing: 0.01em;
   font-weight: 400;
   margin-bottom: 4px;
@@ -687,10 +689,11 @@ h3 {
 
 .form-input {
   width: 100%;
-  padding: 12px 12px 12px 42px;
+  padding: 11px 12px 11px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:focus {
   border-color: var(--accent-color);
@@ -704,8 +707,10 @@ h3 {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-comment {
+  display: block;
   width: 100%;
   height: 120px;
   resize: none;
@@ -713,7 +718,6 @@ h3 {
   border-radius: 4px;
   padding: 12px 16px;
   outline: none;
-  margin-bottom: 10px;
 }
 .form-comment:focus {
   border-color: var(--accent-color);
@@ -726,6 +730,7 @@ h3 {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .checkbox-input {
