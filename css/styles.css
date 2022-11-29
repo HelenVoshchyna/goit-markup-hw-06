@@ -737,18 +737,18 @@ h3 {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  width: 16px;
-  height: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
 }
 
 .checkbox-border {
-  position: absolute;
   top: 50%;
   left: 20px;
-  transform: translateY(-50%);
   display: flex;
   align-items: center;
   justify-content: center;
